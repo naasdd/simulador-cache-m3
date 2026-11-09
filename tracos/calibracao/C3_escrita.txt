@@ -1,0 +1,12 @@
+# Calibração 3 — escritas; rode duas vezes: write-back e write-through
+# Configuração: capacidade 64 B, bloco 16 B, 1 via
+W 0x10000000
+W 0x10000004
+R 0x10000008
+R 0x10000040
+W 0x10000010
+R 0x10000000
+W 0x10000050
+W 0x10000054
+R 0x10000014
+W 0x10000018

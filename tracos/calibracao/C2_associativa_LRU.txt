@@ -1,0 +1,11 @@
+# Calibração 2 — 2 vias com LRU (um simulador com FIFO erra o acesso 5)
+# Configuração: capacidade 64 B, bloco 16 B, 2 vias, write-back
+R 0x10000000
+R 0x10000020
+R 0x10000004
+R 0x10000040
+R 0x10000008
+R 0x10000024
+R 0x10000010
+R 0x10000050
+R 0x10000014

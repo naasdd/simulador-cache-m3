@@ -1,0 +1,12 @@
+# Calibração 4 — os três tipos de falta
+# Configuração: capacidade 64 B, bloco 16 B, 1 via, write-back
+R 0x10000000
+R 0x10000040
+R 0x10000000
+R 0x10000010
+R 0x10000020
+R 0x10000030
+R 0x10000050
+R 0x10000040
+R 0x10000010
+R 0x10000024

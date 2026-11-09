@@ -1,0 +1,43 @@
+CONFIGURACAO  capacidade=64 B  bloco=16 B  vias=1  conjuntos=4  escrita=WB
+CAMPOS        rotulo=26 bits  indice=2 bits  offset=4 bits
+
+   1  W 0x10000000  rot=0x0400000  idx=0   off=0   FALTA  compulsoria
+   2  W 0x10000004  rot=0x0400000  idx=0   off=4   ACERTO
+   3  R 0x10000008  rot=0x0400000  idx=0   off=8   ACERTO
+   4  R 0x10000040  rot=0x0400001  idx=0   off=0   FALTA  compulsoria expulsa 0x10000000 (writeback)
+   5  W 0x10000010  rot=0x0400000  idx=1   off=0   FALTA  compulsoria
+   6  R 0x10000000  rot=0x0400000  idx=0   off=0   FALTA  conflito    expulsa 0x10000040
+   7  W 0x10000050  rot=0x0400001  idx=1   off=0   FALTA  compulsoria expulsa 0x10000010 (writeback)
+   8  W 0x10000054  rot=0x0400001  idx=1   off=4   ACERTO
+   9  R 0x10000014  rot=0x0400000  idx=1   off=4   FALTA  conflito    expulsa 0x10000050 (writeback)
+  10  W 0x10000018  rot=0x0400000  idx=1   off=8   ACERTO
+
+acessos ............. 10
+acertos ............. 4
+faltas .............. 6  (compulsorias 4, conflito 2, capacidade 0)
+taxa de acerto ...... 40.00%
+blocos lidos da mem.  6  (96 B)
+escritas na memoria  4  (64 B)  [writebacks 3 + descarga final 1]
+
+======================================================================
+
+CONFIGURACAO  capacidade=64 B  bloco=16 B  vias=1  conjuntos=4  escrita=WT
+CAMPOS        rotulo=26 bits  indice=2 bits  offset=4 bits
+
+   1  W 0x10000000  rot=0x0400000  idx=0   off=0   FALTA  compulsoria
+   2  W 0x10000004  rot=0x0400000  idx=0   off=4   ACERTO
+   3  R 0x10000008  rot=0x0400000  idx=0   off=8   ACERTO
+   4  R 0x10000040  rot=0x0400001  idx=0   off=0   FALTA  compulsoria expulsa 0x10000000
+   5  W 0x10000010  rot=0x0400000  idx=1   off=0   FALTA  compulsoria
+   6  R 0x10000000  rot=0x0400000  idx=0   off=0   FALTA  conflito    expulsa 0x10000040
+   7  W 0x10000050  rot=0x0400001  idx=1   off=0   FALTA  compulsoria expulsa 0x10000010
+   8  W 0x10000054  rot=0x0400001  idx=1   off=4   ACERTO
+   9  R 0x10000014  rot=0x0400000  idx=1   off=4   FALTA  conflito    expulsa 0x10000050
+  10  W 0x10000018  rot=0x0400000  idx=1   off=8   ACERTO
+
+acessos ............. 10
+acertos ............. 4
+faltas .............. 6  (compulsorias 4, conflito 2, capacidade 0)
+taxa de acerto ...... 40.00%
+blocos lidos da mem.  6  (96 B)
+escritas na memoria  6  (24 B)

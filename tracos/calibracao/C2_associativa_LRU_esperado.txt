@@ -1,0 +1,19 @@
+CONFIGURACAO  capacidade=64 B  bloco=16 B  vias=2  conjuntos=2  escrita=WB
+CAMPOS        rotulo=27 bits  indice=1 bits  offset=4 bits
+
+   1  R 0x10000000  rot=0x0800000  idx=0   off=0   FALTA  compulsoria
+   2  R 0x10000020  rot=0x0800001  idx=0   off=0   FALTA  compulsoria
+   3  R 0x10000004  rot=0x0800000  idx=0   off=4   ACERTO
+   4  R 0x10000040  rot=0x0800002  idx=0   off=0   FALTA  compulsoria expulsa 0x10000020
+   5  R 0x10000008  rot=0x0800000  idx=0   off=8   ACERTO
+   6  R 0x10000024  rot=0x0800001  idx=0   off=4   FALTA  conflito    expulsa 0x10000040
+   7  R 0x10000010  rot=0x0800000  idx=1   off=0   FALTA  compulsoria
+   8  R 0x10000050  rot=0x0800002  idx=1   off=0   FALTA  compulsoria
+   9  R 0x10000014  rot=0x0800000  idx=1   off=4   ACERTO
+
+acessos ............. 9
+acertos ............. 3
+faltas .............. 6  (compulsorias 5, conflito 1, capacidade 0)
+taxa de acerto ...... 33.33%
+blocos lidos da mem.  6  (96 B)
+escritas na memoria  0  (0 B)  [writebacks 0 + descarga final 0]

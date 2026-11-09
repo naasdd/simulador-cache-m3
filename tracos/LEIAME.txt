@@ -1,0 +1,14 @@
+Prática — Simulador de Cache e Experimentos
+Organização de Computadores — UNIVALI
+
+calibracao/    quatro traços COM a saída esperada (arquivos *_esperado.txt).
+               O simulador de vocês deve reproduzir os quatro antes de qualquer experimento.
+               A configuração de cada traço está no cabeçalho do arquivo.
+               O C3 deve ser rodado duas vezes: write-back e write-through
+               (as duas saídas estão no mesmo arquivo de resposta).
+
+experimentos/  os traços dos experimentos E1 a E6, SEM resposta.
+               E4 usa o mesmo arquivo do E1.
+
+Formato: uma linha por acesso — R ou W, seguido do endereço em hexadecimal.
+Tudo depois de # é comentário.

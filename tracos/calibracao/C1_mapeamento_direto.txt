@@ -1,0 +1,12 @@
+# Calibração 1 — mapeamento direto, só leituras
+# Configuração: capacidade 128 B, bloco 16 B, 1 via, write-back
+R 0x10000000
+R 0x10000004
+R 0x1000000C
+R 0x10000010
+R 0x10000080
+R 0x10000008
+R 0x10000014
+R 0x10000084
+R 0x1000007C
+R 0x100000FC
