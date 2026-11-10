@@ -19,3 +19,13 @@ Prof. Thiago Felski Pereira.
 3. **Folha de previsões** — preencher ANTES de rodar os experimentos (entregue no início do lab).
 4. **Experimentos** E1–E6 + Desafio — script que roda todas as configurações e gera as tabelas.
 5. **Relatório** — por experimento: Previsão → Medição → Justificativa (citando acessos) → Conciliação.
+
+## Como compilar e rodar
+
+```bash
+make                 # gera ./simulador
+./calibrar.sh        # roda C1–C4 e compara com as respostas (deve dar 4 de 4)
+./simulador --traco tracos/experimentos/E1_varredura.txt --capacidade 256 --bloco 16 --vias 1 --escrita WB
+```
+
+Opções: `--vias total` (totalmente associativa), `--resumo` (só o resumo final).
