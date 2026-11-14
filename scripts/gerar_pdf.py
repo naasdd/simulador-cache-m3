@@ -64,6 +64,7 @@ pre { font-family: 'Courier New', Courier, monospace; font-size: 9.5pt; line-hei
       border: 1px solid #999; padding: 6pt 9pt; margin: 6pt 0 14pt 0; white-space: pre-wrap; break-inside: avoid; }
 code { font-family: 'Courier New', Courier, monospace; font-size: 10.5pt; }
 
+.rotulo { break-after: avoid; }
 .referencia { text-indent: 0; text-align: left; padding-left: 0; margin-bottom: 12pt; line-height: 1.0; }
 """
 
@@ -189,8 +190,16 @@ def converterMarkdownParaHtml(textoMarkdown):
                 and not re.match(r"^\d+\. ", linhas[i].strip()):
             linhasDoParagrafo.append(linhas[i].strip())
             i += 1
-        classe = ' class="referencia"' if estamosNasReferencias else ""
-        partesDoHtml.append(f"<p{classe}>{formatarTextoDaLinha(' '.join(linhasDoParagrafo))}</p>")
+        textoDoParagrafo = ' '.join(linhasDoParagrafo)
+        # parágrafo que é só um rótulo em negrito ("**Justificativa.**") não pode ficar sozinho no fim da página
+        ehSoUmRotulo = re.fullmatch(r"\*\*[^*]+\*\*", textoDoParagrafo) is not None
+        if estamosNasReferencias:
+            classe = ' class="referencia"'
+        elif ehSoUmRotulo:
+            classe = ' class="rotulo"'
+        else:
+            classe = ""
+        partesDoHtml.append(f"<p{classe}>{formatarTextoDaLinha(textoDoParagrafo)}</p>")
 
     return "\n".join(partesDoHtml)
 

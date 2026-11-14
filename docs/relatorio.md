@@ -76,7 +76,7 @@ Em todos os experimentos a capacidade da cache é 256 B. Os números de acesso c
 **Justificativa.**
 
 1. Com p = B/4 palavras por bloco, cada bloco recebe p acessos seguidos: uma falta e p − 1 acertos. A taxa é, portanto, (p − 1)/p = 1 − 4/B, o que dá 0% para p = 1, 50% para p = 2, 75% para p = 4, 87,5% para p = 8 e 93,75% para p = 16, exatamente os valores da tabela. Com bloco de 16 B, o acesso 1 (0x10000000) falta e os acessos 2, 3 e 4 acertam no mesmo índice 0; o acesso 5 (0x10000010) falta no índice 1 e o padrão se repete.
-2. Só apareceram faltas compulsórias. Cada bloco do vetor é usado uma única vez e nunca é procurado de novo, então nenhuma falta pode ser de conflito ou de capacidade. O vetor tem 512 B, o dobro da cache, e a partir do acesso 65 (0x10000100) os blocos novos expulsam os antigos ("expulsa 0x10000000"), mas isso não gera falta extra porque os blocos expulsos não voltam a ser lidos.
+2. Só apareceram faltas compulsórias. Cada bloco do vetor é usado uma única vez e nunca é procurado de novo, então nenhuma falta pode ser de conflito ou de capacidade. O vetor tem 512 B, o dobro da cache. Com bloco de 16 B, a partir do acesso 65 (0x10000100) os blocos novos expulsam os antigos ("expulsa 0x10000000"); com os outros tamanhos de bloco acontece o mesmo assim que o vetor passa dos primeiros 256 B. Mesmo assim, isso não gera falta extra porque os blocos expulsos não voltam a ser lidos.
 3. Os bytes lidos ficaram em 512 B em todas as configurações: o vetor inteiro é trazido exatamente uma vez, só que em pedaços maiores ou menores. Neste traço, aumentar o bloco não tem custo em tráfego e reduz as faltas de 128 para 8, porque todo byte trazido é usado.
 
 **Conciliação.** A medição coincidiu com a previsão.
@@ -139,7 +139,22 @@ Em todos os experimentos a capacidade da cache é 256 B. Os números de acesso c
 
 1. Os dois vetores juntos ocupam 256 B e caberiam na cache, mas o segundo começa 256 B depois do primeiro, e 256 B é exatamente o período do índice com 1 via. Assim A[i] e B[i] têm o mesmo índice e só o rótulo muda. Os acessos 1 (0x10000000) e 2 (0x10000100) caem no índice 0 e o acesso 2 expulsa 0x10000000. O acesso 3 (A[1], mesmo bloco de A[0]) falta por conflito e expulsa 0x10000100, o acesso 4 expulsa A de novo, e assim até o fim: os 64 acessos faltam (16 compulsórias e 48 de conflito), e os índices 8 a 15 nunca são usados.
 2. Com 2 vias há 8 conjuntos. A[i] e B[i] continuam no mesmo conjunto, mas agora existem dois lugares. Os acessos 1 e 2 faltam (compulsórias), os acessos 3 a 8 acertam e o acesso 9 (0x10000010) falta porque é um bloco novo de A. São 2 faltas e 6 acertos a cada 8 acessos, ou seja, 75%, todas as faltas compulsórias: a associatividade eliminou as 48 faltas de conflito. Com 4 e 16 vias o resultado é idêntico, porque 2 vias já bastavam para o par A[i] e B[i] e os 16 blocos cabem nas 16 linhas. Como 75% é o máximo possível com bloco de 16 B, não há o que melhorar.
-3. No traço modificado (tracos/nossos/E3_dois_vetores_modificado.txt), o segundo vetor passa a começar em 0x10000080, 128 B depois do primeiro. Com 1 via, A ocupa os índices 0 a 7 e B ocupa os índices 8 a 15, sem sobreposição. O acesso 1 (0x10000000) cai no índice 0, o acesso 2 (0x10000080) cai no índice 8 e os acessos 3 a 8 acertam; nos acessos 33 e 34, A[16] e B[16] caem nos índices 4 e 12. O resultado é 75%, o máximo possível, já que as 16 faltas restantes são compulsórias. Qualquer posição que não coloque blocos dos dois vetores no mesmo índice funciona, como 0x10000080 ou 0x10000180.
+3. No traço modificado (tracos/nossos/E3_dois_vetores_modificado.txt), o segundo vetor passa a começar em 0x10000080, 128 B depois do primeiro, em vez de 0x10000100. O traço mantém os mesmos 64 acessos alternados A[i], B[i]; só muda o endereço de B. O início e o fim do arquivo são mostrados abaixo.
+
+```
+# E3 modificado: o segundo vetor agora começa 128 bytes depois do primeiro (0x10000080)
+R 0x10000000    # A[0]
+R 0x10000080    # B[0]
+R 0x10000004    # A[1]
+R 0x10000084    # B[1]
+R 0x10000008    # A[2]
+R 0x10000088    # B[2]
+...
+R 0x1000007C    # A[31]
+R 0x100000FC    # B[31]
+```
+
+   Com 1 via, A ocupa os índices 0 a 7 e B ocupa os índices 8 a 15, sem sobreposição. O acesso 1 (0x10000000) cai no índice 0, o acesso 2 (0x10000080) cai no índice 8 e os acessos 3 a 8 acertam; nos acessos 33 e 34, A[16] e B[16] caem nos índices 4 e 12. O resultado é 75%, o máximo possível, já que as 16 faltas restantes são compulsórias. Qualquer posição que não coloque blocos dos dois vetores no mesmo índice funciona, como 0x10000080 ou 0x10000180.
 
 | Vias | Acertos | Taxa de acerto | Compuls. | Conflito | Capac. |
 |---:|---:|---:|---:|---:|---:|
