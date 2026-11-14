@@ -1,0 +1,42 @@
+CONFIGURACAO  capacidade=256 B  bloco=16 B  vias=2  conjuntos=8  escrita=WB
+CAMPOS        rotulo=25 bits  indice=3 bits  offset=4 bits
+
+   1  W 0x10000000  rot=0x0200000  idx=0   off=0   FALTA  compulsoria
+   2  W 0x10000010  rot=0x0200000  idx=1   off=0   FALTA  compulsoria
+   3  W 0x10000020  rot=0x0200000  idx=2   off=0   FALTA  compulsoria
+   4  W 0x10000030  rot=0x0200000  idx=3   off=0   FALTA  compulsoria
+   5  W 0x10000040  rot=0x0200000  idx=4   off=0   FALTA  compulsoria
+   6  W 0x10000050  rot=0x0200000  idx=5   off=0   FALTA  compulsoria
+   7  W 0x10000060  rot=0x0200000  idx=6   off=0   FALTA  compulsoria
+   8  W 0x10000070  rot=0x0200000  idx=7   off=0   FALTA  compulsoria
+   9  W 0x10000080  rot=0x0200001  idx=0   off=0   FALTA  compulsoria
+  10  W 0x10000090  rot=0x0200001  idx=1   off=0   FALTA  compulsoria
+  11  W 0x100000A0  rot=0x0200001  idx=2   off=0   FALTA  compulsoria
+  12  W 0x100000B0  rot=0x0200001  idx=3   off=0   FALTA  compulsoria
+  13  W 0x100000C0  rot=0x0200001  idx=4   off=0   FALTA  compulsoria
+  14  W 0x100000D0  rot=0x0200001  idx=5   off=0   FALTA  compulsoria
+  15  W 0x100000E0  rot=0x0200001  idx=6   off=0   FALTA  compulsoria
+  16  W 0x100000F0  rot=0x0200001  idx=7   off=0   FALTA  compulsoria
+  17  W 0x10000100  rot=0x0200002  idx=0   off=0   FALTA  compulsoria expulsa 0x10000000 (writeback)
+  18  W 0x10000110  rot=0x0200002  idx=1   off=0   FALTA  compulsoria expulsa 0x10000010 (writeback)
+  19  W 0x10000120  rot=0x0200002  idx=2   off=0   FALTA  compulsoria expulsa 0x10000020 (writeback)
+  20  W 0x10000130  rot=0x0200002  idx=3   off=0   FALTA  compulsoria expulsa 0x10000030 (writeback)
+  21  W 0x10000140  rot=0x0200002  idx=4   off=0   FALTA  compulsoria expulsa 0x10000040 (writeback)
+  22  W 0x10000150  rot=0x0200002  idx=5   off=0   FALTA  compulsoria expulsa 0x10000050 (writeback)
+  23  W 0x10000160  rot=0x0200002  idx=6   off=0   FALTA  compulsoria expulsa 0x10000060 (writeback)
+  24  W 0x10000170  rot=0x0200002  idx=7   off=0   FALTA  compulsoria expulsa 0x10000070 (writeback)
+  25  W 0x10000180  rot=0x0200003  idx=0   off=0   FALTA  compulsoria expulsa 0x10000080 (writeback)
+  26  W 0x10000190  rot=0x0200003  idx=1   off=0   FALTA  compulsoria expulsa 0x10000090 (writeback)
+  27  W 0x100001A0  rot=0x0200003  idx=2   off=0   FALTA  compulsoria expulsa 0x100000A0 (writeback)
+  28  W 0x100001B0  rot=0x0200003  idx=3   off=0   FALTA  compulsoria expulsa 0x100000B0 (writeback)
+  29  W 0x100001C0  rot=0x0200003  idx=4   off=0   FALTA  compulsoria expulsa 0x100000C0 (writeback)
+  30  W 0x100001D0  rot=0x0200003  idx=5   off=0   FALTA  compulsoria expulsa 0x100000D0 (writeback)
+  31  W 0x100001E0  rot=0x0200003  idx=6   off=0   FALTA  compulsoria expulsa 0x100000E0 (writeback)
+  32  W 0x100001F0  rot=0x0200003  idx=7   off=0   FALTA  compulsoria expulsa 0x100000F0 (writeback)
+
+acessos ............. 32
+acertos ............. 0
+faltas .............. 32  (compulsorias 32, conflito 0, capacidade 0)
+taxa de acerto ...... 0.00%
+blocos lidos da mem.  32  (512 B)
+escritas na memoria  32  (512 B)  [writebacks 16 + descarga final 16]

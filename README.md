@@ -3,13 +3,19 @@
 Prática: simulador de cache + experimentos com estratégias de organização.
 Prof. Thiago Felski Pereira.
 
-**Integrantes:** _(preencher)_
+**Integrantes:** José Gabriel Santos Gomes, Matheus Pompeo Dias, Nathan Gustavo Reichert
 
 ## Estrutura
 
 - `docs/enunciado.pdf` — enunciado da prática
 - `tracos/calibracao/` — traços C1–C4 com a saída esperada (`*_esperado.txt`)
 - `tracos/experimentos/` — traços E1–E6 (sem resposta)
+- `tracos/nossos/` — traço do E3 modificado e traço do Desafio
+- `src/`, `include/` — código do simulador (C++17)
+- `resultados/` — saída por acesso de cada configuração + `tabelas.md`
+- `docs/folha_de_previsoes.md` — previsões (feitas antes de rodar)
+- `docs/relatorio.md` — relatório final
+- `docs/estudo_notion.md` — material de estudo pra defesa
 
 ## Roteiro
 
@@ -25,6 +31,7 @@ Prof. Thiago Felski Pereira.
 ```bash
 make                 # gera ./simulador
 ./calibrar.sh        # roda C1–C4 e compara com as respostas (deve dar 4 de 4)
+./rodar_experimentos.sh   # roda E1–E6 + Desafio e gera resultados/tabelas.md
 ./simulador --traco tracos/experimentos/E1_varredura.txt --capacidade 256 --bloco 16 --vias 1 --escrita WB
 ```
 

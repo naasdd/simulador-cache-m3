@@ -1,0 +1,74 @@
+CONFIGURACAO  capacidade=256 B  bloco=16 B  vias=4  conjuntos=4  escrita=WB
+CAMPOS        rotulo=26 bits  indice=2 bits  offset=4 bits
+
+   1  R 0x10000000  rot=0x0400000  idx=0   off=0   FALTA  compulsoria
+   2  R 0x10000100  rot=0x0400004  idx=0   off=0   FALTA  compulsoria
+   3  R 0x10000004  rot=0x0400000  idx=0   off=4   ACERTO
+   4  R 0x10000104  rot=0x0400004  idx=0   off=4   ACERTO
+   5  R 0x10000008  rot=0x0400000  idx=0   off=8   ACERTO
+   6  R 0x10000108  rot=0x0400004  idx=0   off=8   ACERTO
+   7  R 0x1000000C  rot=0x0400000  idx=0   off=12  ACERTO
+   8  R 0x1000010C  rot=0x0400004  idx=0   off=12  ACERTO
+   9  R 0x10000010  rot=0x0400000  idx=1   off=0   FALTA  compulsoria
+  10  R 0x10000110  rot=0x0400004  idx=1   off=0   FALTA  compulsoria
+  11  R 0x10000014  rot=0x0400000  idx=1   off=4   ACERTO
+  12  R 0x10000114  rot=0x0400004  idx=1   off=4   ACERTO
+  13  R 0x10000018  rot=0x0400000  idx=1   off=8   ACERTO
+  14  R 0x10000118  rot=0x0400004  idx=1   off=8   ACERTO
+  15  R 0x1000001C  rot=0x0400000  idx=1   off=12  ACERTO
+  16  R 0x1000011C  rot=0x0400004  idx=1   off=12  ACERTO
+  17  R 0x10000020  rot=0x0400000  idx=2   off=0   FALTA  compulsoria
+  18  R 0x10000120  rot=0x0400004  idx=2   off=0   FALTA  compulsoria
+  19  R 0x10000024  rot=0x0400000  idx=2   off=4   ACERTO
+  20  R 0x10000124  rot=0x0400004  idx=2   off=4   ACERTO
+  21  R 0x10000028  rot=0x0400000  idx=2   off=8   ACERTO
+  22  R 0x10000128  rot=0x0400004  idx=2   off=8   ACERTO
+  23  R 0x1000002C  rot=0x0400000  idx=2   off=12  ACERTO
+  24  R 0x1000012C  rot=0x0400004  idx=2   off=12  ACERTO
+  25  R 0x10000030  rot=0x0400000  idx=3   off=0   FALTA  compulsoria
+  26  R 0x10000130  rot=0x0400004  idx=3   off=0   FALTA  compulsoria
+  27  R 0x10000034  rot=0x0400000  idx=3   off=4   ACERTO
+  28  R 0x10000134  rot=0x0400004  idx=3   off=4   ACERTO
+  29  R 0x10000038  rot=0x0400000  idx=3   off=8   ACERTO
+  30  R 0x10000138  rot=0x0400004  idx=3   off=8   ACERTO
+  31  R 0x1000003C  rot=0x0400000  idx=3   off=12  ACERTO
+  32  R 0x1000013C  rot=0x0400004  idx=3   off=12  ACERTO
+  33  R 0x10000040  rot=0x0400001  idx=0   off=0   FALTA  compulsoria
+  34  R 0x10000140  rot=0x0400005  idx=0   off=0   FALTA  compulsoria
+  35  R 0x10000044  rot=0x0400001  idx=0   off=4   ACERTO
+  36  R 0x10000144  rot=0x0400005  idx=0   off=4   ACERTO
+  37  R 0x10000048  rot=0x0400001  idx=0   off=8   ACERTO
+  38  R 0x10000148  rot=0x0400005  idx=0   off=8   ACERTO
+  39  R 0x1000004C  rot=0x0400001  idx=0   off=12  ACERTO
+  40  R 0x1000014C  rot=0x0400005  idx=0   off=12  ACERTO
+  41  R 0x10000050  rot=0x0400001  idx=1   off=0   FALTA  compulsoria
+  42  R 0x10000150  rot=0x0400005  idx=1   off=0   FALTA  compulsoria
+  43  R 0x10000054  rot=0x0400001  idx=1   off=4   ACERTO
+  44  R 0x10000154  rot=0x0400005  idx=1   off=4   ACERTO
+  45  R 0x10000058  rot=0x0400001  idx=1   off=8   ACERTO
+  46  R 0x10000158  rot=0x0400005  idx=1   off=8   ACERTO
+  47  R 0x1000005C  rot=0x0400001  idx=1   off=12  ACERTO
+  48  R 0x1000015C  rot=0x0400005  idx=1   off=12  ACERTO
+  49  R 0x10000060  rot=0x0400001  idx=2   off=0   FALTA  compulsoria
+  50  R 0x10000160  rot=0x0400005  idx=2   off=0   FALTA  compulsoria
+  51  R 0x10000064  rot=0x0400001  idx=2   off=4   ACERTO
+  52  R 0x10000164  rot=0x0400005  idx=2   off=4   ACERTO
+  53  R 0x10000068  rot=0x0400001  idx=2   off=8   ACERTO
+  54  R 0x10000168  rot=0x0400005  idx=2   off=8   ACERTO
+  55  R 0x1000006C  rot=0x0400001  idx=2   off=12  ACERTO
+  56  R 0x1000016C  rot=0x0400005  idx=2   off=12  ACERTO
+  57  R 0x10000070  rot=0x0400001  idx=3   off=0   FALTA  compulsoria
+  58  R 0x10000170  rot=0x0400005  idx=3   off=0   FALTA  compulsoria
+  59  R 0x10000074  rot=0x0400001  idx=3   off=4   ACERTO
+  60  R 0x10000174  rot=0x0400005  idx=3   off=4   ACERTO
+  61  R 0x10000078  rot=0x0400001  idx=3   off=8   ACERTO
+  62  R 0x10000178  rot=0x0400005  idx=3   off=8   ACERTO
+  63  R 0x1000007C  rot=0x0400001  idx=3   off=12  ACERTO
+  64  R 0x1000017C  rot=0x0400005  idx=3   off=12  ACERTO
+
+acessos ............. 64
+acertos ............. 48
+faltas .............. 16  (compulsorias 16, conflito 0, capacidade 0)
+taxa de acerto ...... 75.00%
+blocos lidos da mem.  16  (256 B)
+escritas na memoria  0  (0 B)  [writebacks 0 + descarga final 0]

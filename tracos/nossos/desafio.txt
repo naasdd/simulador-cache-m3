@@ -1,0 +1,45 @@
+# Desafio: 4 blocos separados por 256 B (A, A+256, A+512, A+768), acessados em rodizio, 10 rodadas
+# Com bloco de 16 B os 4 caem no mesmo conjunto com 1, 2 e 4 vias:
+#   1 via  -> 4 blocos brigando por 1 lugar  -> tudo falta
+#   2 vias -> 4 blocos brigando por 2 lugares; o LRU sempre tira o proximo a ser usado -> tudo falta
+#   4 vias -> os 4 cabem no conjunto -> so as 4 primeiras faltam
+R 0x10000000
+R 0x10000100
+R 0x10000200
+R 0x10000300
+R 0x10000000
+R 0x10000100
+R 0x10000200
+R 0x10000300
+R 0x10000000
+R 0x10000100
+R 0x10000200
+R 0x10000300
+R 0x10000000
+R 0x10000100
+R 0x10000200
+R 0x10000300
+R 0x10000000
+R 0x10000100
+R 0x10000200
+R 0x10000300
+R 0x10000000
+R 0x10000100
+R 0x10000200
+R 0x10000300
+R 0x10000000
+R 0x10000100
+R 0x10000200
+R 0x10000300
+R 0x10000000
+R 0x10000100
+R 0x10000200
+R 0x10000300
+R 0x10000000
+R 0x10000100
+R 0x10000200
+R 0x10000300
+R 0x10000000
+R 0x10000100
+R 0x10000200
+R 0x10000300

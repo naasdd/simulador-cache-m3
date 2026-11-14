@@ -1,0 +1,250 @@
+CONFIGURACAO  capacidade=256 B  bloco=16 B  vias=4  conjuntos=4  escrita=WB
+CAMPOS        rotulo=26 bits  indice=2 bits  offset=4 bits
+
+   1  R 0x10000000  rot=0x0400000  idx=0   off=0   FALTA  compulsoria
+   2  R 0x10000004  rot=0x0400000  idx=0   off=4   ACERTO
+   3  R 0x10000008  rot=0x0400000  idx=0   off=8   ACERTO
+   4  R 0x1000000C  rot=0x0400000  idx=0   off=12  ACERTO
+   5  R 0x10000010  rot=0x0400000  idx=1   off=0   FALTA  compulsoria
+   6  R 0x10000014  rot=0x0400000  idx=1   off=4   ACERTO
+   7  R 0x10000018  rot=0x0400000  idx=1   off=8   ACERTO
+   8  R 0x1000001C  rot=0x0400000  idx=1   off=12  ACERTO
+   9  R 0x10000020  rot=0x0400000  idx=2   off=0   FALTA  compulsoria
+  10  R 0x10000024  rot=0x0400000  idx=2   off=4   ACERTO
+  11  R 0x10000028  rot=0x0400000  idx=2   off=8   ACERTO
+  12  R 0x1000002C  rot=0x0400000  idx=2   off=12  ACERTO
+  13  R 0x10000030  rot=0x0400000  idx=3   off=0   FALTA  compulsoria
+  14  R 0x10000034  rot=0x0400000  idx=3   off=4   ACERTO
+  15  R 0x10000038  rot=0x0400000  idx=3   off=8   ACERTO
+  16  R 0x1000003C  rot=0x0400000  idx=3   off=12  ACERTO
+  17  R 0x10000040  rot=0x0400001  idx=0   off=0   FALTA  compulsoria
+  18  R 0x10000044  rot=0x0400001  idx=0   off=4   ACERTO
+  19  R 0x10000048  rot=0x0400001  idx=0   off=8   ACERTO
+  20  R 0x1000004C  rot=0x0400001  idx=0   off=12  ACERTO
+  21  R 0x10000050  rot=0x0400001  idx=1   off=0   FALTA  compulsoria
+  22  R 0x10000054  rot=0x0400001  idx=1   off=4   ACERTO
+  23  R 0x10000058  rot=0x0400001  idx=1   off=8   ACERTO
+  24  R 0x1000005C  rot=0x0400001  idx=1   off=12  ACERTO
+  25  R 0x10000060  rot=0x0400001  idx=2   off=0   FALTA  compulsoria
+  26  R 0x10000064  rot=0x0400001  idx=2   off=4   ACERTO
+  27  R 0x10000068  rot=0x0400001  idx=2   off=8   ACERTO
+  28  R 0x1000006C  rot=0x0400001  idx=2   off=12  ACERTO
+  29  R 0x10000070  rot=0x0400001  idx=3   off=0   FALTA  compulsoria
+  30  R 0x10000074  rot=0x0400001  idx=3   off=4   ACERTO
+  31  R 0x10000078  rot=0x0400001  idx=3   off=8   ACERTO
+  32  R 0x1000007C  rot=0x0400001  idx=3   off=12  ACERTO
+  33  R 0x10000080  rot=0x0400002  idx=0   off=0   FALTA  compulsoria
+  34  R 0x10000084  rot=0x0400002  idx=0   off=4   ACERTO
+  35  R 0x10000088  rot=0x0400002  idx=0   off=8   ACERTO
+  36  R 0x1000008C  rot=0x0400002  idx=0   off=12  ACERTO
+  37  R 0x10000090  rot=0x0400002  idx=1   off=0   FALTA  compulsoria
+  38  R 0x10000094  rot=0x0400002  idx=1   off=4   ACERTO
+  39  R 0x10000098  rot=0x0400002  idx=1   off=8   ACERTO
+  40  R 0x1000009C  rot=0x0400002  idx=1   off=12  ACERTO
+  41  R 0x100000A0  rot=0x0400002  idx=2   off=0   FALTA  compulsoria
+  42  R 0x100000A4  rot=0x0400002  idx=2   off=4   ACERTO
+  43  R 0x100000A8  rot=0x0400002  idx=2   off=8   ACERTO
+  44  R 0x100000AC  rot=0x0400002  idx=2   off=12  ACERTO
+  45  R 0x100000B0  rot=0x0400002  idx=3   off=0   FALTA  compulsoria
+  46  R 0x100000B4  rot=0x0400002  idx=3   off=4   ACERTO
+  47  R 0x100000B8  rot=0x0400002  idx=3   off=8   ACERTO
+  48  R 0x100000BC  rot=0x0400002  idx=3   off=12  ACERTO
+  49  R 0x100000C0  rot=0x0400003  idx=0   off=0   FALTA  compulsoria
+  50  R 0x100000C4  rot=0x0400003  idx=0   off=4   ACERTO
+  51  R 0x100000C8  rot=0x0400003  idx=0   off=8   ACERTO
+  52  R 0x100000CC  rot=0x0400003  idx=0   off=12  ACERTO
+  53  R 0x100000D0  rot=0x0400003  idx=1   off=0   FALTA  compulsoria
+  54  R 0x100000D4  rot=0x0400003  idx=1   off=4   ACERTO
+  55  R 0x100000D8  rot=0x0400003  idx=1   off=8   ACERTO
+  56  R 0x100000DC  rot=0x0400003  idx=1   off=12  ACERTO
+  57  R 0x100000E0  rot=0x0400003  idx=2   off=0   FALTA  compulsoria
+  58  R 0x100000E4  rot=0x0400003  idx=2   off=4   ACERTO
+  59  R 0x100000E8  rot=0x0400003  idx=2   off=8   ACERTO
+  60  R 0x100000EC  rot=0x0400003  idx=2   off=12  ACERTO
+  61  R 0x100000F0  rot=0x0400003  idx=3   off=0   FALTA  compulsoria
+  62  R 0x100000F4  rot=0x0400003  idx=3   off=4   ACERTO
+  63  R 0x100000F8  rot=0x0400003  idx=3   off=8   ACERTO
+  64  R 0x100000FC  rot=0x0400003  idx=3   off=12  ACERTO
+  65  R 0x10000100  rot=0x0400004  idx=0   off=0   FALTA  compulsoria expulsa 0x10000000
+  66  R 0x10000104  rot=0x0400004  idx=0   off=4   ACERTO
+  67  R 0x10000108  rot=0x0400004  idx=0   off=8   ACERTO
+  68  R 0x1000010C  rot=0x0400004  idx=0   off=12  ACERTO
+  69  R 0x10000110  rot=0x0400004  idx=1   off=0   FALTA  compulsoria expulsa 0x10000010
+  70  R 0x10000114  rot=0x0400004  idx=1   off=4   ACERTO
+  71  R 0x10000118  rot=0x0400004  idx=1   off=8   ACERTO
+  72  R 0x1000011C  rot=0x0400004  idx=1   off=12  ACERTO
+  73  R 0x10000120  rot=0x0400004  idx=2   off=0   FALTA  compulsoria expulsa 0x10000020
+  74  R 0x10000124  rot=0x0400004  idx=2   off=4   ACERTO
+  75  R 0x10000128  rot=0x0400004  idx=2   off=8   ACERTO
+  76  R 0x1000012C  rot=0x0400004  idx=2   off=12  ACERTO
+  77  R 0x10000130  rot=0x0400004  idx=3   off=0   FALTA  compulsoria expulsa 0x10000030
+  78  R 0x10000134  rot=0x0400004  idx=3   off=4   ACERTO
+  79  R 0x10000138  rot=0x0400004  idx=3   off=8   ACERTO
+  80  R 0x1000013C  rot=0x0400004  idx=3   off=12  ACERTO
+  81  R 0x10000000  rot=0x0400000  idx=0   off=0   FALTA  capacidade  expulsa 0x10000040
+  82  R 0x10000004  rot=0x0400000  idx=0   off=4   ACERTO
+  83  R 0x10000008  rot=0x0400000  idx=0   off=8   ACERTO
+  84  R 0x1000000C  rot=0x0400000  idx=0   off=12  ACERTO
+  85  R 0x10000010  rot=0x0400000  idx=1   off=0   FALTA  capacidade  expulsa 0x10000050
+  86  R 0x10000014  rot=0x0400000  idx=1   off=4   ACERTO
+  87  R 0x10000018  rot=0x0400000  idx=1   off=8   ACERTO
+  88  R 0x1000001C  rot=0x0400000  idx=1   off=12  ACERTO
+  89  R 0x10000020  rot=0x0400000  idx=2   off=0   FALTA  capacidade  expulsa 0x10000060
+  90  R 0x10000024  rot=0x0400000  idx=2   off=4   ACERTO
+  91  R 0x10000028  rot=0x0400000  idx=2   off=8   ACERTO
+  92  R 0x1000002C  rot=0x0400000  idx=2   off=12  ACERTO
+  93  R 0x10000030  rot=0x0400000  idx=3   off=0   FALTA  capacidade  expulsa 0x10000070
+  94  R 0x10000034  rot=0x0400000  idx=3   off=4   ACERTO
+  95  R 0x10000038  rot=0x0400000  idx=3   off=8   ACERTO
+  96  R 0x1000003C  rot=0x0400000  idx=3   off=12  ACERTO
+  97  R 0x10000040  rot=0x0400001  idx=0   off=0   FALTA  capacidade  expulsa 0x10000080
+  98  R 0x10000044  rot=0x0400001  idx=0   off=4   ACERTO
+  99  R 0x10000048  rot=0x0400001  idx=0   off=8   ACERTO
+ 100  R 0x1000004C  rot=0x0400001  idx=0   off=12  ACERTO
+ 101  R 0x10000050  rot=0x0400001  idx=1   off=0   FALTA  capacidade  expulsa 0x10000090
+ 102  R 0x10000054  rot=0x0400001  idx=1   off=4   ACERTO
+ 103  R 0x10000058  rot=0x0400001  idx=1   off=8   ACERTO
+ 104  R 0x1000005C  rot=0x0400001  idx=1   off=12  ACERTO
+ 105  R 0x10000060  rot=0x0400001  idx=2   off=0   FALTA  capacidade  expulsa 0x100000A0
+ 106  R 0x10000064  rot=0x0400001  idx=2   off=4   ACERTO
+ 107  R 0x10000068  rot=0x0400001  idx=2   off=8   ACERTO
+ 108  R 0x1000006C  rot=0x0400001  idx=2   off=12  ACERTO
+ 109  R 0x10000070  rot=0x0400001  idx=3   off=0   FALTA  capacidade  expulsa 0x100000B0
+ 110  R 0x10000074  rot=0x0400001  idx=3   off=4   ACERTO
+ 111  R 0x10000078  rot=0x0400001  idx=3   off=8   ACERTO
+ 112  R 0x1000007C  rot=0x0400001  idx=3   off=12  ACERTO
+ 113  R 0x10000080  rot=0x0400002  idx=0   off=0   FALTA  capacidade  expulsa 0x100000C0
+ 114  R 0x10000084  rot=0x0400002  idx=0   off=4   ACERTO
+ 115  R 0x10000088  rot=0x0400002  idx=0   off=8   ACERTO
+ 116  R 0x1000008C  rot=0x0400002  idx=0   off=12  ACERTO
+ 117  R 0x10000090  rot=0x0400002  idx=1   off=0   FALTA  capacidade  expulsa 0x100000D0
+ 118  R 0x10000094  rot=0x0400002  idx=1   off=4   ACERTO
+ 119  R 0x10000098  rot=0x0400002  idx=1   off=8   ACERTO
+ 120  R 0x1000009C  rot=0x0400002  idx=1   off=12  ACERTO
+ 121  R 0x100000A0  rot=0x0400002  idx=2   off=0   FALTA  capacidade  expulsa 0x100000E0
+ 122  R 0x100000A4  rot=0x0400002  idx=2   off=4   ACERTO
+ 123  R 0x100000A8  rot=0x0400002  idx=2   off=8   ACERTO
+ 124  R 0x100000AC  rot=0x0400002  idx=2   off=12  ACERTO
+ 125  R 0x100000B0  rot=0x0400002  idx=3   off=0   FALTA  capacidade  expulsa 0x100000F0
+ 126  R 0x100000B4  rot=0x0400002  idx=3   off=4   ACERTO
+ 127  R 0x100000B8  rot=0x0400002  idx=3   off=8   ACERTO
+ 128  R 0x100000BC  rot=0x0400002  idx=3   off=12  ACERTO
+ 129  R 0x100000C0  rot=0x0400003  idx=0   off=0   FALTA  capacidade  expulsa 0x10000100
+ 130  R 0x100000C4  rot=0x0400003  idx=0   off=4   ACERTO
+ 131  R 0x100000C8  rot=0x0400003  idx=0   off=8   ACERTO
+ 132  R 0x100000CC  rot=0x0400003  idx=0   off=12  ACERTO
+ 133  R 0x100000D0  rot=0x0400003  idx=1   off=0   FALTA  capacidade  expulsa 0x10000110
+ 134  R 0x100000D4  rot=0x0400003  idx=1   off=4   ACERTO
+ 135  R 0x100000D8  rot=0x0400003  idx=1   off=8   ACERTO
+ 136  R 0x100000DC  rot=0x0400003  idx=1   off=12  ACERTO
+ 137  R 0x100000E0  rot=0x0400003  idx=2   off=0   FALTA  capacidade  expulsa 0x10000120
+ 138  R 0x100000E4  rot=0x0400003  idx=2   off=4   ACERTO
+ 139  R 0x100000E8  rot=0x0400003  idx=2   off=8   ACERTO
+ 140  R 0x100000EC  rot=0x0400003  idx=2   off=12  ACERTO
+ 141  R 0x100000F0  rot=0x0400003  idx=3   off=0   FALTA  capacidade  expulsa 0x10000130
+ 142  R 0x100000F4  rot=0x0400003  idx=3   off=4   ACERTO
+ 143  R 0x100000F8  rot=0x0400003  idx=3   off=8   ACERTO
+ 144  R 0x100000FC  rot=0x0400003  idx=3   off=12  ACERTO
+ 145  R 0x10000100  rot=0x0400004  idx=0   off=0   FALTA  capacidade  expulsa 0x10000000
+ 146  R 0x10000104  rot=0x0400004  idx=0   off=4   ACERTO
+ 147  R 0x10000108  rot=0x0400004  idx=0   off=8   ACERTO
+ 148  R 0x1000010C  rot=0x0400004  idx=0   off=12  ACERTO
+ 149  R 0x10000110  rot=0x0400004  idx=1   off=0   FALTA  capacidade  expulsa 0x10000010
+ 150  R 0x10000114  rot=0x0400004  idx=1   off=4   ACERTO
+ 151  R 0x10000118  rot=0x0400004  idx=1   off=8   ACERTO
+ 152  R 0x1000011C  rot=0x0400004  idx=1   off=12  ACERTO
+ 153  R 0x10000120  rot=0x0400004  idx=2   off=0   FALTA  capacidade  expulsa 0x10000020
+ 154  R 0x10000124  rot=0x0400004  idx=2   off=4   ACERTO
+ 155  R 0x10000128  rot=0x0400004  idx=2   off=8   ACERTO
+ 156  R 0x1000012C  rot=0x0400004  idx=2   off=12  ACERTO
+ 157  R 0x10000130  rot=0x0400004  idx=3   off=0   FALTA  capacidade  expulsa 0x10000030
+ 158  R 0x10000134  rot=0x0400004  idx=3   off=4   ACERTO
+ 159  R 0x10000138  rot=0x0400004  idx=3   off=8   ACERTO
+ 160  R 0x1000013C  rot=0x0400004  idx=3   off=12  ACERTO
+ 161  R 0x10000000  rot=0x0400000  idx=0   off=0   FALTA  capacidade  expulsa 0x10000040
+ 162  R 0x10000004  rot=0x0400000  idx=0   off=4   ACERTO
+ 163  R 0x10000008  rot=0x0400000  idx=0   off=8   ACERTO
+ 164  R 0x1000000C  rot=0x0400000  idx=0   off=12  ACERTO
+ 165  R 0x10000010  rot=0x0400000  idx=1   off=0   FALTA  capacidade  expulsa 0x10000050
+ 166  R 0x10000014  rot=0x0400000  idx=1   off=4   ACERTO
+ 167  R 0x10000018  rot=0x0400000  idx=1   off=8   ACERTO
+ 168  R 0x1000001C  rot=0x0400000  idx=1   off=12  ACERTO
+ 169  R 0x10000020  rot=0x0400000  idx=2   off=0   FALTA  capacidade  expulsa 0x10000060
+ 170  R 0x10000024  rot=0x0400000  idx=2   off=4   ACERTO
+ 171  R 0x10000028  rot=0x0400000  idx=2   off=8   ACERTO
+ 172  R 0x1000002C  rot=0x0400000  idx=2   off=12  ACERTO
+ 173  R 0x10000030  rot=0x0400000  idx=3   off=0   FALTA  capacidade  expulsa 0x10000070
+ 174  R 0x10000034  rot=0x0400000  idx=3   off=4   ACERTO
+ 175  R 0x10000038  rot=0x0400000  idx=3   off=8   ACERTO
+ 176  R 0x1000003C  rot=0x0400000  idx=3   off=12  ACERTO
+ 177  R 0x10000040  rot=0x0400001  idx=0   off=0   FALTA  capacidade  expulsa 0x10000080
+ 178  R 0x10000044  rot=0x0400001  idx=0   off=4   ACERTO
+ 179  R 0x10000048  rot=0x0400001  idx=0   off=8   ACERTO
+ 180  R 0x1000004C  rot=0x0400001  idx=0   off=12  ACERTO
+ 181  R 0x10000050  rot=0x0400001  idx=1   off=0   FALTA  capacidade  expulsa 0x10000090
+ 182  R 0x10000054  rot=0x0400001  idx=1   off=4   ACERTO
+ 183  R 0x10000058  rot=0x0400001  idx=1   off=8   ACERTO
+ 184  R 0x1000005C  rot=0x0400001  idx=1   off=12  ACERTO
+ 185  R 0x10000060  rot=0x0400001  idx=2   off=0   FALTA  capacidade  expulsa 0x100000A0
+ 186  R 0x10000064  rot=0x0400001  idx=2   off=4   ACERTO
+ 187  R 0x10000068  rot=0x0400001  idx=2   off=8   ACERTO
+ 188  R 0x1000006C  rot=0x0400001  idx=2   off=12  ACERTO
+ 189  R 0x10000070  rot=0x0400001  idx=3   off=0   FALTA  capacidade  expulsa 0x100000B0
+ 190  R 0x10000074  rot=0x0400001  idx=3   off=4   ACERTO
+ 191  R 0x10000078  rot=0x0400001  idx=3   off=8   ACERTO
+ 192  R 0x1000007C  rot=0x0400001  idx=3   off=12  ACERTO
+ 193  R 0x10000080  rot=0x0400002  idx=0   off=0   FALTA  capacidade  expulsa 0x100000C0
+ 194  R 0x10000084  rot=0x0400002  idx=0   off=4   ACERTO
+ 195  R 0x10000088  rot=0x0400002  idx=0   off=8   ACERTO
+ 196  R 0x1000008C  rot=0x0400002  idx=0   off=12  ACERTO
+ 197  R 0x10000090  rot=0x0400002  idx=1   off=0   FALTA  capacidade  expulsa 0x100000D0
+ 198  R 0x10000094  rot=0x0400002  idx=1   off=4   ACERTO
+ 199  R 0x10000098  rot=0x0400002  idx=1   off=8   ACERTO
+ 200  R 0x1000009C  rot=0x0400002  idx=1   off=12  ACERTO
+ 201  R 0x100000A0  rot=0x0400002  idx=2   off=0   FALTA  capacidade  expulsa 0x100000E0
+ 202  R 0x100000A4  rot=0x0400002  idx=2   off=4   ACERTO
+ 203  R 0x100000A8  rot=0x0400002  idx=2   off=8   ACERTO
+ 204  R 0x100000AC  rot=0x0400002  idx=2   off=12  ACERTO
+ 205  R 0x100000B0  rot=0x0400002  idx=3   off=0   FALTA  capacidade  expulsa 0x100000F0
+ 206  R 0x100000B4  rot=0x0400002  idx=3   off=4   ACERTO
+ 207  R 0x100000B8  rot=0x0400002  idx=3   off=8   ACERTO
+ 208  R 0x100000BC  rot=0x0400002  idx=3   off=12  ACERTO
+ 209  R 0x100000C0  rot=0x0400003  idx=0   off=0   FALTA  capacidade  expulsa 0x10000100
+ 210  R 0x100000C4  rot=0x0400003  idx=0   off=4   ACERTO
+ 211  R 0x100000C8  rot=0x0400003  idx=0   off=8   ACERTO
+ 212  R 0x100000CC  rot=0x0400003  idx=0   off=12  ACERTO
+ 213  R 0x100000D0  rot=0x0400003  idx=1   off=0   FALTA  capacidade  expulsa 0x10000110
+ 214  R 0x100000D4  rot=0x0400003  idx=1   off=4   ACERTO
+ 215  R 0x100000D8  rot=0x0400003  idx=1   off=8   ACERTO
+ 216  R 0x100000DC  rot=0x0400003  idx=1   off=12  ACERTO
+ 217  R 0x100000E0  rot=0x0400003  idx=2   off=0   FALTA  capacidade  expulsa 0x10000120
+ 218  R 0x100000E4  rot=0x0400003  idx=2   off=4   ACERTO
+ 219  R 0x100000E8  rot=0x0400003  idx=2   off=8   ACERTO
+ 220  R 0x100000EC  rot=0x0400003  idx=2   off=12  ACERTO
+ 221  R 0x100000F0  rot=0x0400003  idx=3   off=0   FALTA  capacidade  expulsa 0x10000130
+ 222  R 0x100000F4  rot=0x0400003  idx=3   off=4   ACERTO
+ 223  R 0x100000F8  rot=0x0400003  idx=3   off=8   ACERTO
+ 224  R 0x100000FC  rot=0x0400003  idx=3   off=12  ACERTO
+ 225  R 0x10000100  rot=0x0400004  idx=0   off=0   FALTA  capacidade  expulsa 0x10000000
+ 226  R 0x10000104  rot=0x0400004  idx=0   off=4   ACERTO
+ 227  R 0x10000108  rot=0x0400004  idx=0   off=8   ACERTO
+ 228  R 0x1000010C  rot=0x0400004  idx=0   off=12  ACERTO
+ 229  R 0x10000110  rot=0x0400004  idx=1   off=0   FALTA  capacidade  expulsa 0x10000010
+ 230  R 0x10000114  rot=0x0400004  idx=1   off=4   ACERTO
+ 231  R 0x10000118  rot=0x0400004  idx=1   off=8   ACERTO
+ 232  R 0x1000011C  rot=0x0400004  idx=1   off=12  ACERTO
+ 233  R 0x10000120  rot=0x0400004  idx=2   off=0   FALTA  capacidade  expulsa 0x10000020
+ 234  R 0x10000124  rot=0x0400004  idx=2   off=4   ACERTO
+ 235  R 0x10000128  rot=0x0400004  idx=2   off=8   ACERTO
+ 236  R 0x1000012C  rot=0x0400004  idx=2   off=12  ACERTO
+ 237  R 0x10000130  rot=0x0400004  idx=3   off=0   FALTA  capacidade  expulsa 0x10000030
+ 238  R 0x10000134  rot=0x0400004  idx=3   off=4   ACERTO
+ 239  R 0x10000138  rot=0x0400004  idx=3   off=8   ACERTO
+ 240  R 0x1000013C  rot=0x0400004  idx=3   off=12  ACERTO
+
+acessos ............. 240
+acertos ............. 180
+faltas .............. 60  (compulsorias 20, conflito 0, capacidade 40)
+taxa de acerto ...... 75.00%
+blocos lidos da mem.  60  (960 B)
+escritas na memoria  0  (0 B)  [writebacks 0 + descarga final 0]

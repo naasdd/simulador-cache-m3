@@ -1,0 +1,74 @@
+CONFIGURACAO  capacidade=256 B  bloco=8 B  vias=1  conjuntos=32  escrita=WB
+CAMPOS        rotulo=24 bits  indice=5 bits  offset=3 bits
+
+   1  R 0x10000000  rot=0x100000  idx=0   off=0   FALTA  compulsoria
+   2  R 0x10000048  rot=0x100000  idx=9   off=0   FALTA  compulsoria
+   3  R 0x10000090  rot=0x100000  idx=18  off=0   FALTA  compulsoria
+   4  R 0x100000D8  rot=0x100000  idx=27  off=0   FALTA  compulsoria
+   5  R 0x10000120  rot=0x100001  idx=4   off=0   FALTA  compulsoria
+   6  R 0x10000168  rot=0x100001  idx=13  off=0   FALTA  compulsoria
+   7  R 0x100001B0  rot=0x100001  idx=22  off=0   FALTA  compulsoria
+   8  R 0x100001F8  rot=0x100001  idx=31  off=0   FALTA  compulsoria
+   9  R 0x10000240  rot=0x100002  idx=8   off=0   FALTA  compulsoria
+  10  R 0x10000288  rot=0x100002  idx=17  off=0   FALTA  compulsoria
+  11  R 0x100002D0  rot=0x100002  idx=26  off=0   FALTA  compulsoria
+  12  R 0x10000318  rot=0x100003  idx=3   off=0   FALTA  compulsoria
+  13  R 0x10000360  rot=0x100003  idx=12  off=0   FALTA  compulsoria
+  14  R 0x100003A8  rot=0x100003  idx=21  off=0   FALTA  compulsoria
+  15  R 0x100003F0  rot=0x100003  idx=30  off=0   FALTA  compulsoria
+  16  R 0x10000438  rot=0x100004  idx=7   off=0   FALTA  compulsoria
+  17  R 0x10000000  rot=0x100000  idx=0   off=0   ACERTO
+  18  R 0x10000048  rot=0x100000  idx=9   off=0   ACERTO
+  19  R 0x10000090  rot=0x100000  idx=18  off=0   ACERTO
+  20  R 0x100000D8  rot=0x100000  idx=27  off=0   ACERTO
+  21  R 0x10000120  rot=0x100001  idx=4   off=0   ACERTO
+  22  R 0x10000168  rot=0x100001  idx=13  off=0   ACERTO
+  23  R 0x100001B0  rot=0x100001  idx=22  off=0   ACERTO
+  24  R 0x100001F8  rot=0x100001  idx=31  off=0   ACERTO
+  25  R 0x10000240  rot=0x100002  idx=8   off=0   ACERTO
+  26  R 0x10000288  rot=0x100002  idx=17  off=0   ACERTO
+  27  R 0x100002D0  rot=0x100002  idx=26  off=0   ACERTO
+  28  R 0x10000318  rot=0x100003  idx=3   off=0   ACERTO
+  29  R 0x10000360  rot=0x100003  idx=12  off=0   ACERTO
+  30  R 0x100003A8  rot=0x100003  idx=21  off=0   ACERTO
+  31  R 0x100003F0  rot=0x100003  idx=30  off=0   ACERTO
+  32  R 0x10000438  rot=0x100004  idx=7   off=0   ACERTO
+  33  R 0x10000000  rot=0x100000  idx=0   off=0   ACERTO
+  34  R 0x10000048  rot=0x100000  idx=9   off=0   ACERTO
+  35  R 0x10000090  rot=0x100000  idx=18  off=0   ACERTO
+  36  R 0x100000D8  rot=0x100000  idx=27  off=0   ACERTO
+  37  R 0x10000120  rot=0x100001  idx=4   off=0   ACERTO
+  38  R 0x10000168  rot=0x100001  idx=13  off=0   ACERTO
+  39  R 0x100001B0  rot=0x100001  idx=22  off=0   ACERTO
+  40  R 0x100001F8  rot=0x100001  idx=31  off=0   ACERTO
+  41  R 0x10000240  rot=0x100002  idx=8   off=0   ACERTO
+  42  R 0x10000288  rot=0x100002  idx=17  off=0   ACERTO
+  43  R 0x100002D0  rot=0x100002  idx=26  off=0   ACERTO
+  44  R 0x10000318  rot=0x100003  idx=3   off=0   ACERTO
+  45  R 0x10000360  rot=0x100003  idx=12  off=0   ACERTO
+  46  R 0x100003A8  rot=0x100003  idx=21  off=0   ACERTO
+  47  R 0x100003F0  rot=0x100003  idx=30  off=0   ACERTO
+  48  R 0x10000438  rot=0x100004  idx=7   off=0   ACERTO
+  49  R 0x10000000  rot=0x100000  idx=0   off=0   ACERTO
+  50  R 0x10000048  rot=0x100000  idx=9   off=0   ACERTO
+  51  R 0x10000090  rot=0x100000  idx=18  off=0   ACERTO
+  52  R 0x100000D8  rot=0x100000  idx=27  off=0   ACERTO
+  53  R 0x10000120  rot=0x100001  idx=4   off=0   ACERTO
+  54  R 0x10000168  rot=0x100001  idx=13  off=0   ACERTO
+  55  R 0x100001B0  rot=0x100001  idx=22  off=0   ACERTO
+  56  R 0x100001F8  rot=0x100001  idx=31  off=0   ACERTO
+  57  R 0x10000240  rot=0x100002  idx=8   off=0   ACERTO
+  58  R 0x10000288  rot=0x100002  idx=17  off=0   ACERTO
+  59  R 0x100002D0  rot=0x100002  idx=26  off=0   ACERTO
+  60  R 0x10000318  rot=0x100003  idx=3   off=0   ACERTO
+  61  R 0x10000360  rot=0x100003  idx=12  off=0   ACERTO
+  62  R 0x100003A8  rot=0x100003  idx=21  off=0   ACERTO
+  63  R 0x100003F0  rot=0x100003  idx=30  off=0   ACERTO
+  64  R 0x10000438  rot=0x100004  idx=7   off=0   ACERTO
+
+acessos ............. 64
+acertos ............. 48
+faltas .............. 16  (compulsorias 16, conflito 0, capacidade 0)
+taxa de acerto ...... 75.00%
+blocos lidos da mem.  16  (128 B)
+escritas na memoria  0  (0 B)  [writebacks 0 + descarga final 0]

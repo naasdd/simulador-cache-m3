@@ -1,0 +1,74 @@
+CONFIGURACAO  capacidade=256 B  bloco=64 B  vias=1  conjuntos=4  escrita=WB
+CAMPOS        rotulo=24 bits  indice=2 bits  offset=6 bits
+
+   1  R 0x10000000  rot=0x100000  idx=0   off=0   FALTA  compulsoria
+   2  R 0x10000048  rot=0x100000  idx=1   off=8   FALTA  compulsoria
+   3  R 0x10000090  rot=0x100000  idx=2   off=16  FALTA  compulsoria
+   4  R 0x100000D8  rot=0x100000  idx=3   off=24  FALTA  compulsoria
+   5  R 0x10000120  rot=0x100001  idx=0   off=32  FALTA  compulsoria expulsa 0x10000000
+   6  R 0x10000168  rot=0x100001  idx=1   off=40  FALTA  compulsoria expulsa 0x10000040
+   7  R 0x100001B0  rot=0x100001  idx=2   off=48  FALTA  compulsoria expulsa 0x10000080
+   8  R 0x100001F8  rot=0x100001  idx=3   off=56  FALTA  compulsoria expulsa 0x100000C0
+   9  R 0x10000240  rot=0x100002  idx=1   off=0   FALTA  compulsoria expulsa 0x10000140
+  10  R 0x10000288  rot=0x100002  idx=2   off=8   FALTA  compulsoria expulsa 0x10000180
+  11  R 0x100002D0  rot=0x100002  idx=3   off=16  FALTA  compulsoria expulsa 0x100001C0
+  12  R 0x10000318  rot=0x100003  idx=0   off=24  FALTA  compulsoria expulsa 0x10000100
+  13  R 0x10000360  rot=0x100003  idx=1   off=32  FALTA  compulsoria expulsa 0x10000240
+  14  R 0x100003A8  rot=0x100003  idx=2   off=40  FALTA  compulsoria expulsa 0x10000280
+  15  R 0x100003F0  rot=0x100003  idx=3   off=48  FALTA  compulsoria expulsa 0x100002C0
+  16  R 0x10000438  rot=0x100004  idx=0   off=56  FALTA  compulsoria expulsa 0x10000300
+  17  R 0x10000000  rot=0x100000  idx=0   off=0   FALTA  capacidade  expulsa 0x10000400
+  18  R 0x10000048  rot=0x100000  idx=1   off=8   FALTA  capacidade  expulsa 0x10000340
+  19  R 0x10000090  rot=0x100000  idx=2   off=16  FALTA  capacidade  expulsa 0x10000380
+  20  R 0x100000D8  rot=0x100000  idx=3   off=24  FALTA  capacidade  expulsa 0x100003C0
+  21  R 0x10000120  rot=0x100001  idx=0   off=32  FALTA  capacidade  expulsa 0x10000000
+  22  R 0x10000168  rot=0x100001  idx=1   off=40  FALTA  capacidade  expulsa 0x10000040
+  23  R 0x100001B0  rot=0x100001  idx=2   off=48  FALTA  capacidade  expulsa 0x10000080
+  24  R 0x100001F8  rot=0x100001  idx=3   off=56  FALTA  capacidade  expulsa 0x100000C0
+  25  R 0x10000240  rot=0x100002  idx=1   off=0   FALTA  capacidade  expulsa 0x10000140
+  26  R 0x10000288  rot=0x100002  idx=2   off=8   FALTA  capacidade  expulsa 0x10000180
+  27  R 0x100002D0  rot=0x100002  idx=3   off=16  FALTA  capacidade  expulsa 0x100001C0
+  28  R 0x10000318  rot=0x100003  idx=0   off=24  FALTA  capacidade  expulsa 0x10000100
+  29  R 0x10000360  rot=0x100003  idx=1   off=32  FALTA  capacidade  expulsa 0x10000240
+  30  R 0x100003A8  rot=0x100003  idx=2   off=40  FALTA  capacidade  expulsa 0x10000280
+  31  R 0x100003F0  rot=0x100003  idx=3   off=48  FALTA  capacidade  expulsa 0x100002C0
+  32  R 0x10000438  rot=0x100004  idx=0   off=56  FALTA  capacidade  expulsa 0x10000300
+  33  R 0x10000000  rot=0x100000  idx=0   off=0   FALTA  capacidade  expulsa 0x10000400
+  34  R 0x10000048  rot=0x100000  idx=1   off=8   FALTA  capacidade  expulsa 0x10000340
+  35  R 0x10000090  rot=0x100000  idx=2   off=16  FALTA  capacidade  expulsa 0x10000380
+  36  R 0x100000D8  rot=0x100000  idx=3   off=24  FALTA  capacidade  expulsa 0x100003C0
+  37  R 0x10000120  rot=0x100001  idx=0   off=32  FALTA  capacidade  expulsa 0x10000000
+  38  R 0x10000168  rot=0x100001  idx=1   off=40  FALTA  capacidade  expulsa 0x10000040
+  39  R 0x100001B0  rot=0x100001  idx=2   off=48  FALTA  capacidade  expulsa 0x10000080
+  40  R 0x100001F8  rot=0x100001  idx=3   off=56  FALTA  capacidade  expulsa 0x100000C0
+  41  R 0x10000240  rot=0x100002  idx=1   off=0   FALTA  capacidade  expulsa 0x10000140
+  42  R 0x10000288  rot=0x100002  idx=2   off=8   FALTA  capacidade  expulsa 0x10000180
+  43  R 0x100002D0  rot=0x100002  idx=3   off=16  FALTA  capacidade  expulsa 0x100001C0
+  44  R 0x10000318  rot=0x100003  idx=0   off=24  FALTA  capacidade  expulsa 0x10000100
+  45  R 0x10000360  rot=0x100003  idx=1   off=32  FALTA  capacidade  expulsa 0x10000240
+  46  R 0x100003A8  rot=0x100003  idx=2   off=40  FALTA  capacidade  expulsa 0x10000280
+  47  R 0x100003F0  rot=0x100003  idx=3   off=48  FALTA  capacidade  expulsa 0x100002C0
+  48  R 0x10000438  rot=0x100004  idx=0   off=56  FALTA  capacidade  expulsa 0x10000300
+  49  R 0x10000000  rot=0x100000  idx=0   off=0   FALTA  capacidade  expulsa 0x10000400
+  50  R 0x10000048  rot=0x100000  idx=1   off=8   FALTA  capacidade  expulsa 0x10000340
+  51  R 0x10000090  rot=0x100000  idx=2   off=16  FALTA  capacidade  expulsa 0x10000380
+  52  R 0x100000D8  rot=0x100000  idx=3   off=24  FALTA  capacidade  expulsa 0x100003C0
+  53  R 0x10000120  rot=0x100001  idx=0   off=32  FALTA  capacidade  expulsa 0x10000000
+  54  R 0x10000168  rot=0x100001  idx=1   off=40  FALTA  capacidade  expulsa 0x10000040
+  55  R 0x100001B0  rot=0x100001  idx=2   off=48  FALTA  capacidade  expulsa 0x10000080
+  56  R 0x100001F8  rot=0x100001  idx=3   off=56  FALTA  capacidade  expulsa 0x100000C0
+  57  R 0x10000240  rot=0x100002  idx=1   off=0   FALTA  capacidade  expulsa 0x10000140
+  58  R 0x10000288  rot=0x100002  idx=2   off=8   FALTA  capacidade  expulsa 0x10000180
+  59  R 0x100002D0  rot=0x100002  idx=3   off=16  FALTA  capacidade  expulsa 0x100001C0
+  60  R 0x10000318  rot=0x100003  idx=0   off=24  FALTA  capacidade  expulsa 0x10000100
+  61  R 0x10000360  rot=0x100003  idx=1   off=32  FALTA  capacidade  expulsa 0x10000240
+  62  R 0x100003A8  rot=0x100003  idx=2   off=40  FALTA  capacidade  expulsa 0x10000280
+  63  R 0x100003F0  rot=0x100003  idx=3   off=48  FALTA  capacidade  expulsa 0x100002C0
+  64  R 0x10000438  rot=0x100004  idx=0   off=56  FALTA  capacidade  expulsa 0x10000300
+
+acessos ............. 64
+acertos ............. 0
+faltas .............. 64  (compulsorias 16, conflito 0, capacidade 48)
+taxa de acerto ...... 0.00%
+blocos lidos da mem.  64  (4096 B)
+escritas na memoria  0  (0 B)  [writebacks 0 + descarga final 0]

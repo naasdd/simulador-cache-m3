@@ -1,0 +1,50 @@
+CONFIGURACAO  capacidade=256 B  bloco=16 B  vias=4  conjuntos=4  escrita=WB
+CAMPOS        rotulo=26 bits  indice=2 bits  offset=4 bits
+
+   1  R 0x10000000  rot=0x0400000  idx=0   off=0   FALTA  compulsoria
+   2  R 0x10000100  rot=0x0400004  idx=0   off=0   FALTA  compulsoria
+   3  R 0x10000200  rot=0x0400008  idx=0   off=0   FALTA  compulsoria
+   4  R 0x10000300  rot=0x040000C  idx=0   off=0   FALTA  compulsoria
+   5  R 0x10000000  rot=0x0400000  idx=0   off=0   ACERTO
+   6  R 0x10000100  rot=0x0400004  idx=0   off=0   ACERTO
+   7  R 0x10000200  rot=0x0400008  idx=0   off=0   ACERTO
+   8  R 0x10000300  rot=0x040000C  idx=0   off=0   ACERTO
+   9  R 0x10000000  rot=0x0400000  idx=0   off=0   ACERTO
+  10  R 0x10000100  rot=0x0400004  idx=0   off=0   ACERTO
+  11  R 0x10000200  rot=0x0400008  idx=0   off=0   ACERTO
+  12  R 0x10000300  rot=0x040000C  idx=0   off=0   ACERTO
+  13  R 0x10000000  rot=0x0400000  idx=0   off=0   ACERTO
+  14  R 0x10000100  rot=0x0400004  idx=0   off=0   ACERTO
+  15  R 0x10000200  rot=0x0400008  idx=0   off=0   ACERTO
+  16  R 0x10000300  rot=0x040000C  idx=0   off=0   ACERTO
+  17  R 0x10000000  rot=0x0400000  idx=0   off=0   ACERTO
+  18  R 0x10000100  rot=0x0400004  idx=0   off=0   ACERTO
+  19  R 0x10000200  rot=0x0400008  idx=0   off=0   ACERTO
+  20  R 0x10000300  rot=0x040000C  idx=0   off=0   ACERTO
+  21  R 0x10000000  rot=0x0400000  idx=0   off=0   ACERTO
+  22  R 0x10000100  rot=0x0400004  idx=0   off=0   ACERTO
+  23  R 0x10000200  rot=0x0400008  idx=0   off=0   ACERTO
+  24  R 0x10000300  rot=0x040000C  idx=0   off=0   ACERTO
+  25  R 0x10000000  rot=0x0400000  idx=0   off=0   ACERTO
+  26  R 0x10000100  rot=0x0400004  idx=0   off=0   ACERTO
+  27  R 0x10000200  rot=0x0400008  idx=0   off=0   ACERTO
+  28  R 0x10000300  rot=0x040000C  idx=0   off=0   ACERTO
+  29  R 0x10000000  rot=0x0400000  idx=0   off=0   ACERTO
+  30  R 0x10000100  rot=0x0400004  idx=0   off=0   ACERTO
+  31  R 0x10000200  rot=0x0400008  idx=0   off=0   ACERTO
+  32  R 0x10000300  rot=0x040000C  idx=0   off=0   ACERTO
+  33  R 0x10000000  rot=0x0400000  idx=0   off=0   ACERTO
+  34  R 0x10000100  rot=0x0400004  idx=0   off=0   ACERTO
+  35  R 0x10000200  rot=0x0400008  idx=0   off=0   ACERTO
+  36  R 0x10000300  rot=0x040000C  idx=0   off=0   ACERTO
+  37  R 0x10000000  rot=0x0400000  idx=0   off=0   ACERTO
+  38  R 0x10000100  rot=0x0400004  idx=0   off=0   ACERTO
+  39  R 0x10000200  rot=0x0400008  idx=0   off=0   ACERTO
+  40  R 0x10000300  rot=0x040000C  idx=0   off=0   ACERTO
+
+acessos ............. 40
+acertos ............. 36
+faltas .............. 4  (compulsorias 4, conflito 0, capacidade 0)
+taxa de acerto ...... 90.00%
+blocos lidos da mem.  4  (64 B)
+escritas na memoria  0  (0 B)  [writebacks 0 + descarga final 0]

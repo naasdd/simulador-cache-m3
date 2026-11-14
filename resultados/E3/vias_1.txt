@@ -1,0 +1,74 @@
+CONFIGURACAO  capacidade=256 B  bloco=16 B  vias=1  conjuntos=16  escrita=WB
+CAMPOS        rotulo=24 bits  indice=4 bits  offset=4 bits
+
+   1  R 0x10000000  rot=0x100000  idx=0   off=0   FALTA  compulsoria
+   2  R 0x10000100  rot=0x100001  idx=0   off=0   FALTA  compulsoria expulsa 0x10000000
+   3  R 0x10000004  rot=0x100000  idx=0   off=4   FALTA  conflito    expulsa 0x10000100
+   4  R 0x10000104  rot=0x100001  idx=0   off=4   FALTA  conflito    expulsa 0x10000000
+   5  R 0x10000008  rot=0x100000  idx=0   off=8   FALTA  conflito    expulsa 0x10000100
+   6  R 0x10000108  rot=0x100001  idx=0   off=8   FALTA  conflito    expulsa 0x10000000
+   7  R 0x1000000C  rot=0x100000  idx=0   off=12  FALTA  conflito    expulsa 0x10000100
+   8  R 0x1000010C  rot=0x100001  idx=0   off=12  FALTA  conflito    expulsa 0x10000000
+   9  R 0x10000010  rot=0x100000  idx=1   off=0   FALTA  compulsoria
+  10  R 0x10000110  rot=0x100001  idx=1   off=0   FALTA  compulsoria expulsa 0x10000010
+  11  R 0x10000014  rot=0x100000  idx=1   off=4   FALTA  conflito    expulsa 0x10000110
+  12  R 0x10000114  rot=0x100001  idx=1   off=4   FALTA  conflito    expulsa 0x10000010
+  13  R 0x10000018  rot=0x100000  idx=1   off=8   FALTA  conflito    expulsa 0x10000110
+  14  R 0x10000118  rot=0x100001  idx=1   off=8   FALTA  conflito    expulsa 0x10000010
+  15  R 0x1000001C  rot=0x100000  idx=1   off=12  FALTA  conflito    expulsa 0x10000110
+  16  R 0x1000011C  rot=0x100001  idx=1   off=12  FALTA  conflito    expulsa 0x10000010
+  17  R 0x10000020  rot=0x100000  idx=2   off=0   FALTA  compulsoria
+  18  R 0x10000120  rot=0x100001  idx=2   off=0   FALTA  compulsoria expulsa 0x10000020
+  19  R 0x10000024  rot=0x100000  idx=2   off=4   FALTA  conflito    expulsa 0x10000120
+  20  R 0x10000124  rot=0x100001  idx=2   off=4   FALTA  conflito    expulsa 0x10000020
+  21  R 0x10000028  rot=0x100000  idx=2   off=8   FALTA  conflito    expulsa 0x10000120
+  22  R 0x10000128  rot=0x100001  idx=2   off=8   FALTA  conflito    expulsa 0x10000020
+  23  R 0x1000002C  rot=0x100000  idx=2   off=12  FALTA  conflito    expulsa 0x10000120
+  24  R 0x1000012C  rot=0x100001  idx=2   off=12  FALTA  conflito    expulsa 0x10000020
+  25  R 0x10000030  rot=0x100000  idx=3   off=0   FALTA  compulsoria
+  26  R 0x10000130  rot=0x100001  idx=3   off=0   FALTA  compulsoria expulsa 0x10000030
+  27  R 0x10000034  rot=0x100000  idx=3   off=4   FALTA  conflito    expulsa 0x10000130
+  28  R 0x10000134  rot=0x100001  idx=3   off=4   FALTA  conflito    expulsa 0x10000030
+  29  R 0x10000038  rot=0x100000  idx=3   off=8   FALTA  conflito    expulsa 0x10000130
+  30  R 0x10000138  rot=0x100001  idx=3   off=8   FALTA  conflito    expulsa 0x10000030
+  31  R 0x1000003C  rot=0x100000  idx=3   off=12  FALTA  conflito    expulsa 0x10000130
+  32  R 0x1000013C  rot=0x100001  idx=3   off=12  FALTA  conflito    expulsa 0x10000030
+  33  R 0x10000040  rot=0x100000  idx=4   off=0   FALTA  compulsoria
+  34  R 0x10000140  rot=0x100001  idx=4   off=0   FALTA  compulsoria expulsa 0x10000040
+  35  R 0x10000044  rot=0x100000  idx=4   off=4   FALTA  conflito    expulsa 0x10000140
+  36  R 0x10000144  rot=0x100001  idx=4   off=4   FALTA  conflito    expulsa 0x10000040
+  37  R 0x10000048  rot=0x100000  idx=4   off=8   FALTA  conflito    expulsa 0x10000140
+  38  R 0x10000148  rot=0x100001  idx=4   off=8   FALTA  conflito    expulsa 0x10000040
+  39  R 0x1000004C  rot=0x100000  idx=4   off=12  FALTA  conflito    expulsa 0x10000140
+  40  R 0x1000014C  rot=0x100001  idx=4   off=12  FALTA  conflito    expulsa 0x10000040
+  41  R 0x10000050  rot=0x100000  idx=5   off=0   FALTA  compulsoria
+  42  R 0x10000150  rot=0x100001  idx=5   off=0   FALTA  compulsoria expulsa 0x10000050
+  43  R 0x10000054  rot=0x100000  idx=5   off=4   FALTA  conflito    expulsa 0x10000150
+  44  R 0x10000154  rot=0x100001  idx=5   off=4   FALTA  conflito    expulsa 0x10000050
+  45  R 0x10000058  rot=0x100000  idx=5   off=8   FALTA  conflito    expulsa 0x10000150
+  46  R 0x10000158  rot=0x100001  idx=5   off=8   FALTA  conflito    expulsa 0x10000050
+  47  R 0x1000005C  rot=0x100000  idx=5   off=12  FALTA  conflito    expulsa 0x10000150
+  48  R 0x1000015C  rot=0x100001  idx=5   off=12  FALTA  conflito    expulsa 0x10000050
+  49  R 0x10000060  rot=0x100000  idx=6   off=0   FALTA  compulsoria
+  50  R 0x10000160  rot=0x100001  idx=6   off=0   FALTA  compulsoria expulsa 0x10000060
+  51  R 0x10000064  rot=0x100000  idx=6   off=4   FALTA  conflito    expulsa 0x10000160
+  52  R 0x10000164  rot=0x100001  idx=6   off=4   FALTA  conflito    expulsa 0x10000060
+  53  R 0x10000068  rot=0x100000  idx=6   off=8   FALTA  conflito    expulsa 0x10000160
+  54  R 0x10000168  rot=0x100001  idx=6   off=8   FALTA  conflito    expulsa 0x10000060
+  55  R 0x1000006C  rot=0x100000  idx=6   off=12  FALTA  conflito    expulsa 0x10000160
+  56  R 0x1000016C  rot=0x100001  idx=6   off=12  FALTA  conflito    expulsa 0x10000060
+  57  R 0x10000070  rot=0x100000  idx=7   off=0   FALTA  compulsoria
+  58  R 0x10000170  rot=0x100001  idx=7   off=0   FALTA  compulsoria expulsa 0x10000070
+  59  R 0x10000074  rot=0x100000  idx=7   off=4   FALTA  conflito    expulsa 0x10000170
+  60  R 0x10000174  rot=0x100001  idx=7   off=4   FALTA  conflito    expulsa 0x10000070
+  61  R 0x10000078  rot=0x100000  idx=7   off=8   FALTA  conflito    expulsa 0x10000170
+  62  R 0x10000178  rot=0x100001  idx=7   off=8   FALTA  conflito    expulsa 0x10000070
+  63  R 0x1000007C  rot=0x100000  idx=7   off=12  FALTA  conflito    expulsa 0x10000170
+  64  R 0x1000017C  rot=0x100001  idx=7   off=12  FALTA  conflito    expulsa 0x10000070
+
+acessos ............. 64
+acertos ............. 0
+faltas .............. 64  (compulsorias 16, conflito 48, capacidade 0)
+taxa de acerto ...... 0.00%
+blocos lidos da mem.  64  (1024 B)
+escritas na memoria  0  (0 B)  [writebacks 0 + descarga final 0]
