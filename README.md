@@ -14,7 +14,7 @@ Prof. Thiago Felski Pereira.
 - `src/`, `include/` — código do simulador (C++17)
 - `resultados/` — saída por acesso de cada configuração + `tabelas.md`
 - `docs/folha_de_previsoes.md` — previsões (feitas antes de rodar)
-- `docs/relatorio.md` — relatório final
+- `docs/relatorio.md` / `docs/relatorio.pdf` — relatório final (o PDF é gerado com `python3 scripts/gerar_pdf.py`, precisa do Google Chrome)
 - `docs/estudo_notion.md` — material de estudo pra defesa
 
 ## Roteiro

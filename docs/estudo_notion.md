@@ -4,7 +4,7 @@
 
 **Grupo:** José Gabriel Santos Gomes · Matheus Pompeo Dias · Nathan Gustavo Reichert
 **Repositório:** https://github.com/naasdd/simulador-cache-m3
-**Entrega + defesa:** 30/11 (dia da prova). Ao chegar, coloca o nome no quadro pra apresentar. Defesa ou entrega na aula seguinte vale só 70%.
+**Entrega + defesa:** provavelmente **26/11**. A anotação da aula de 9/11 dizia 30/11 (dia da prova), então **confirmar no AVA**. Ao chegar, coloca o nome no quadro pra apresentar. Defesa ou entrega na aula seguinte vale só 70%.
 
 ---
 
@@ -333,12 +333,13 @@ Se o professor pedir uma configuração na hora, é só trocar os números. Conf
 
 ---
 
-## 8. Checklist pro dia 30
+## 8. Checklist pro dia da entrega (26/11? confirmar no AVA)
 
+- [ ] Data de entrega e defesa confirmada no AVA (26/11 ou 30/11).
 - [ ] Os três sabem rodar `make`, `./calibrar.sh` e um `./simulador` com parâmetros na hora.
 - [ ] Folha de previsões impressa, do jeito que está no repositório.
-- [ ] Relatório exportado (PDF) com os nomes dos três.
-- [ ] Link do GitHub no relatório. O repositório é **privado**: adicionar o professor como colaborador ou entregar o zip.
+- [ ] Relatório em PDF (`docs/relatorio.pdf`, gerado por `python3 scripts/gerar_pdf.py`) postado no AVA.
+- [ ] Link do GitHub no relatório (o repositório é público).
 - [ ] Notebook carregado, com o repositório clonado e compilado (sem depender de internet).
 - [ ] Cada um explica sem ler: LRU, os 3 Cs, WT × WB, E5 (mais vias piora) e o Desafio.
 - [ ] Nome no quadro ao chegar pra prova.
